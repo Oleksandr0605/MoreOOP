@@ -17,7 +17,7 @@ public class CharacterFactory{
         try{
             Constructor<? extends Character> constructor = randomCharacter.getConstructor();
             return constructor.newInstance();
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Error creating character");
             return null;
         }
